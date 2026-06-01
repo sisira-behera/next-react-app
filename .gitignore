@@ -42,3 +42,9 @@ next-env.d.ts
 
 # Agent
 AGENTS.MD
+
+# package-lock.json
+package-lock.json
+
+# yarn.lock
+
