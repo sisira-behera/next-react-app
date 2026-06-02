@@ -1,41 +1,41 @@
-
-export interface Product {
-  id: string;
-  name: string;
-  category: string;
-  price: string;
-  image: string;
-  isNew?: boolean;
-}
+import { Product } from "@/app/models/Product";
 
 export const products: Product[] = [
   {
     id: '1',
-    name: 'Ultralight Kinetic Running Shoes',
+    title: 'Ultralight Kinetic Running Shoes',
     category: 'Footwear',
     price: '$120.00',
-    image: '',
+    thumbnail: '',
     isNew: true,
+    description: "",
+    brand: ""
   },
   {
     id: '2',
-    name: 'Minimalist Leather Smart Watch',
+    title: 'Minimalist Leather Smart Watch',
     category: 'Accessories',
     price: '$199.00',
-    image: '',
+    thumbnail: '',
+    description: "",
+    brand: ""
   },
   {
     id: '3',
-    name: 'Ergonomic Matte Noise-Canceling Headphones',
+    title: 'Ergonomic Matte Noise-Canceling Headphones',
     category: 'Electronics',
     price: '$299.00',
-    image: '',
+    thumbnail: '',
+    description: "",
+    brand: ""
   },
   {
     id: '4',
-    name: 'Waterproof Canvas Explore Backpack',
+    title: 'Waterproof Canvas Explore Backpack',
     category: 'Travel Gear',
     price: '$85.00',
-    image: '' // This will be used for demo'file.svg',
-  },
+    thumbnail: '', // This will be used for demo'file.svg',
+    description: "",
+    brand: ""
+  }
 ];

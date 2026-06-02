@@ -11,7 +11,9 @@ export default function NotFoundPage() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <h2>{t('title')}</h2>
       <p>{t('description')}</p>
-        <Link href="/">{t('goBack')}</Link>
+        <Link key="homepage" href="/">
+          {t('goBack')}
+        </Link>
     </div>
   )
 }

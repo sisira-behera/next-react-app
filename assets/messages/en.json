@@ -13,8 +13,8 @@
     "description": "Browse our collection of products"
   },
   "ProductDetailPage": {
-    "title": "Product Detail",
-    "description": "Displaying data for Product ID:"
+    "title": "Product Detail for Product ID: ",
+    "description": "Displaying data for Product ID: "
   },
   "NotFoundPage": {
     "description": "Requested resource was not found.",

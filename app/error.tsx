@@ -1,6 +1,7 @@
 'use client' // Error components must be Client Components
 
 import { Link } from '@/i18n/navigation';
+import { useParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 
@@ -11,6 +12,9 @@ interface ErrorPageProps {
 
 export default function Error({ error, reset }: ErrorPageProps) {
  
+    const params = useParams();
+    const locale = params.locale as string;
+  
 
   useEffect(() => {
     // Log the error to an external error tracking service (e.g., Sentry, LogRocket)
@@ -53,6 +57,7 @@ export default function Error({ error, reset }: ErrorPageProps) {
           </button>
           
           <Link
+            key='homepage'
             href="/"
             className="w-full py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-semibold rounded-xl text-sm transition-colors"
           >

@@ -51,7 +51,9 @@ export default function LocaleError({ error, reset }: ErrorPageProps) {
             Try Again
           </button>
 
+
           <Link
+            key='homepage'
             href="/"
             locale={locale}
             className="w-full py-2.5 bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-semibold rounded-xl text-sm transition-colors"

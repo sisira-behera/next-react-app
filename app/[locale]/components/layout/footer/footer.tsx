@@ -10,13 +10,13 @@ export default function Footer() {
         
         {/* Navigation Links */}
         <div className="flex justify-center space-x-6 md:order-2">
-          <Link href="/about" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+          <Link key="about" href="/about" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
             About
           </Link>
-          <Link href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+          <Link key="privacy" href="/privacy" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
             Privacy Policy
           </Link>
-          <Link href="/contact" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+          <Link key="contact" href="/contact" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
             Contact
           </Link>
         </div>

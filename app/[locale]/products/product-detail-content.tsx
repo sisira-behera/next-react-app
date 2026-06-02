@@ -7,12 +7,11 @@ export function ProductDetailContent({ id }: { id: string }) {
 
   return (
     <>
-      <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-        {t('title')}
-      </h1>
-      <p className="max-w-sm text-lg leading-7 text-gray-600 dark:text-gray-400">
-        {t('description')} <strong>{id}</strong>
-      </p>
+      <main className="relative pt-20 px-8">
+        <h2 className="text-xl font-semibold">
+          {t("title")} <strong>{id}</strong>
+        </h2>
+      </main>
     </>
   );
 }

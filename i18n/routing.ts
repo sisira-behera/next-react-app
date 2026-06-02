@@ -12,7 +12,7 @@ export const routing = defineRouting({
       de: '/products'
     },
     '/products/[id]': {
-      de: '/products/[id]'
+      de: '/products/${id}'
     },
     '/category': {
       de: '/category'

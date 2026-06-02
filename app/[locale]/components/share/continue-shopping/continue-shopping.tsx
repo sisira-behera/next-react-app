@@ -11,7 +11,7 @@ export default function ContinueShopping({ children, href}: { children?: React.R
     const id = "1"; // Example dynamic ID, replace with actual logic if needed
 
     // Execute the routing push redirect with locale support
-    router.push(href || `/products/${id}`);
+    router.push(`/products/${id}` as any);
   };
 
   return (

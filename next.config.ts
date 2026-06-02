@@ -5,7 +5,17 @@ const nextConfig: NextConfig = {
   /* config options here */
   devIndicators: false, // Hides the development button entirely
   experimental: {
-    // globalNotFound: true,
+    globalNotFound: true,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.dummyjson.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 }
  

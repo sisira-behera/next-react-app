@@ -24,7 +24,7 @@ export default function LoginPage() {
             </h2>
             <p className="mt-2 text-sm text-gray-600">
             Don&apos;t have an account?{' '}
-            <Link href="/signup" className="font-semibold text-blue-600 hover:text-blue-500 transition-colors">
+            <Link key="signup" href="/signup" className="font-semibold text-blue-600 hover:text-blue-500 transition-colors">
                 Sign up for free
             </Link>
             </p>
@@ -57,7 +57,7 @@ export default function LoginPage() {
                 <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                     Password
                 </label>
-                <Link href="/forgot-password" className="text-xs font-semibold text-blue-600 hover:text-blue-500 transition-colors">
+                <Link key="forgot-password" href="/forgot-password" className="text-xs font-semibold text-blue-600 hover:text-blue-500 transition-colors">
                     Forgot password?
                 </Link>
                 </div>
