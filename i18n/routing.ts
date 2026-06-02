@@ -14,11 +14,11 @@ export const routing = defineRouting({
     '/products/[id]': {
       de: '/products/${id}'
     },
-    '/category': {
-      de: '/category'
+    '/categories': {
+      de: '/categories' // category listing page
     },
     '/plp': {
-      de: '/plp'
+      de: '/plp' // category listing page (PLP)
     },
     '/contact': {
       de: '/contact'
