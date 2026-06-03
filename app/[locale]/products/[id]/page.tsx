@@ -19,7 +19,7 @@ export default async function ProductPage({
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
         <ProductDetailContent id={id} /> {/* This component can be used for static content or translations related to the product detail page */}
-        {/* <ProductDetails params={{ id }} /> */} {/* This component fetches and displays product details */}
+        <ProductDetails params={{id}} /> {/* This component fetches and displays product details */}
       </div>
     </div>
   );

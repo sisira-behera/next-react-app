@@ -12,10 +12,10 @@ export const routing = defineRouting({
       de: '/products'
     },
     '/products/[id]': {
-      de: '/products/${id}'
+      de: '/products/[id]'
     },
-    '/categories': {
-      de: '/categories' // category listing page
+    '/category': {
+      de: '/category' // category listing page
     },
     '/plp': {
       de: '/plp' // category listing page (PLP)

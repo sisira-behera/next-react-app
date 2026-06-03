@@ -43,7 +43,7 @@ export default function Navbar() {
             </Link>
             <Link
               key="category"
-              href="/categories"
+              href="/category"
               className="block text-gray-800 dark:text-gray-200 hover:text-blue-500"
             >
               Category
@@ -102,7 +102,7 @@ export default function Navbar() {
           </Link>
           <Link
             key="category"
-            href="/categories"
+            href="/category"
             className="block text-gray-800 dark:text-gray-200 hover:text-blue-500"
           >
             Category

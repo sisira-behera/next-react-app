@@ -18,7 +18,7 @@ export default function LoginPage() {
   return (
     <>
       <AuthNavbar />
-      <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 py-20 font-sans dark:bg-black">
         <div className="w-full max-w-md space-y-8">
           {/* Header Section */}
           <div className="text-center">

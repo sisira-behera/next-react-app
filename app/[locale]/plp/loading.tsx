@@ -1,20 +1,28 @@
-import ProductCardSkeleton from "../components/product/product-list/product-card-skeleton";
+import CardSkeleton from "../components/product/product-category/card-skeleton";
 
 export default function Loading() {
   return (
     <main className="p-8">
-      <h1 className="text-3xl font-bold mb-8 h-8 bg-gray-200 rounded animate-pulse w-1/4" />
-      
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Render multiple skeletons to mimic a grid layout */}
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
-        <ProductCardSkeleton />
+      {/* Updated 12-Column Layout Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        {/* Column 1: Takes up ~33% (4 out of 12 columns) on MD and up */}
+        <div className="text-center md:text-left md:col-span-2"></div>
+
+        {/* Column 2: Takes up ~66% (8 out of 12 columns) on MD and up */}
+        <div className="relative w-full md:col-span-10 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            {/* Render multiple skeletons to mimic a grid layout */}
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+          </div>
+        </div>
       </div>
     </main>
   );

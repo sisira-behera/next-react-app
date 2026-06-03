@@ -7,14 +7,14 @@ import { Link } from '@/i18n/navigation';
 import { Product } from '@/app/models/Product';
 
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json()).then((data) => {
+const fetcherProducts = (url: string) => fetch(url).then((res) => res.json()).then((data) => {
     console.log('Fetched data:', data.products); // Log the raw response data
     return data.products;
 });
 
 export default function ProductView() {
   // SWR automatically uses the pre-fetched server data on initial mount
-  const { data, error } = useSWR('https://dummyjson.com/products', fetcher);
+  const { data, error } = useSWR('https://dummyjson.com/products', fetcherProducts);
 
 
   if (error) return <div>Failed to load.</div>;
