@@ -1,12 +1,23 @@
-import {ReactNode} from 'react';
+
+import { AuthProvider } from './providers';
+import Breadcrumbs from './components/share/breadcrumb/breadcrumb';
 import './globals.css';
 
-type Props = {
-  children: ReactNode;
-};
-
-// Since we have a `not-found.tsx` page on the root, a layout file
-// is required, even if it's just passing children through.
-export default function RootLayout({children}: Props) {
-  return children;
+export default function RootLayout({ 
+  children
+}: { 
+  children: React.ReactNode;
+}) {
+  return (
+    <>
+    { /* This is commented out because the CartProvider is not currently being used.
+     If you want to use it, uncomment this line and the closing tag below.
+     <CartProvider> */ }
+      <AuthProvider>
+        <Breadcrumbs />
+        {children}
+      </AuthProvider>
+    { /* </CartProvider> */ }
+   </>
+  );
 }

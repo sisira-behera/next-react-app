@@ -46,3 +46,10 @@ export interface Meta {
 }
 
 
+export interface SearchResults {
+  products: Product[]
+  total: number
+  skip: number
+  limit: number
+}
+

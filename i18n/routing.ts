@@ -14,14 +14,26 @@ export const routing = defineRouting({
     '/products/[id]': {
       de: '/products/[id]'
     },
-    '/category': {
-      de: '/category' // category listing page
+    '/category/[slug]': {
+      de: '/category/[slug]' // category listing page
     },
     '/plp': {
       de: '/plp' // category listing page (PLP)
     },
+    '/search': {
+      de: '/search' // miscellaneous page
+    },
+    '/misc': {
+      de: '/misc' // miscellaneous page
+    },
+    '/myaccount': {
+      de: '/myaccount' 
+    },
     '/contact': {
       de: '/contact'
+    },
+    '/cart': {
+      de: '/cart'
     },
     '/privacy': {
       de: '/privacy'

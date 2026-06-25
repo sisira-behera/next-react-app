@@ -1,11 +1,13 @@
 import {notFound} from 'next/navigation';
-import { hasLocale, NextIntlClientProvider} from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from "next-intl/server";
 import {routing} from '@/i18n/routing';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import ConditionalHeader from "./components/layout/header/conditional-header";
-import Footer from "./components/layout/footer/footer";
+import ConditionalHeader from "../components/layout/header/conditional-header";
+import Footer from "../components/layout/footer/footer";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -49,6 +51,7 @@ export default async function LocaleLayout({
           <ConditionalHeader />
           {children}
           <Footer />
+          <ToastContainer />
         </NextIntlClientProvider>
       </body>
     </html>
