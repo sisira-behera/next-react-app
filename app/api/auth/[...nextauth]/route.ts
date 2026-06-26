@@ -23,7 +23,7 @@ const users = [
         name: "Demo User",
         email: "demo@example.com",
         password: "password123",
-        image: "http://localhost:3000/_next/static/media/globe.01e2r_giu~5d_.svg"
+        image: "/_next/static/media/globe.01e2r_giu~5d_.svg"
     }
 ];
 

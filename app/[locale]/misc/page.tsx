@@ -25,7 +25,7 @@ export default function MiscPage() {
         Static Global State | Next.js
       </h1>
 
-      <div className="w-full max-w-md bg-white-800 rounded-2xl shadow-2xl border border-white-700 p-6 text-center">
+      <div className="w-full max-w-xl bg-white-800 rounded-2xl shadow-2xl border border-white-700 p-6 m-2 text-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
           1. Tanstack - Debounce Search
         </h2>
@@ -35,7 +35,7 @@ export default function MiscPage() {
           <GlobalSearch />
         </QueryClientProvider>
       </div>
-      <div className="w-full max-w-md bg-white-800 rounded-2xl shadow-2xl border border-white-700 p-6 text-center">
+      <div className="w-full max-w-xl bg-white-800 rounded-2xl shadow-2xl border border-white-700 p-6 m-2 text-center">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
           2. Zustand - Counter Dashboard
         </h2>

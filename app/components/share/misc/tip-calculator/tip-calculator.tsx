@@ -22,11 +22,11 @@ export default function TipCalculator() {
   return (
     <>
       {/* <!-- Calculator Container --> */}
-      <div className="bg-white rounded-3xl shadow-2xl w-full max-w-xl overflow-hidden flex flex-col md:flex-row">
+      <div className="bg-white rounded-3xl shadow-2xl w-full max-w-xl m-2 overflow-hidden flex flex-col md:flex-row">
         {/* <!-- Input Section --> */}
         <div className="p-8 w-full md:w-1/2">
           <h1 className="text-2xl font-bold text-gray-800 mb-6">
-            Tip Calculator
+            3. Tip Calculator
           </h1>
 
           {/* <!-- Bill Amount --> */}
