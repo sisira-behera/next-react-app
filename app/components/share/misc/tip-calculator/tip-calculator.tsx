@@ -26,7 +26,7 @@ export default function TipCalculator() {
         {/* <!-- Input Section --> */}
         <div className="p-8 w-full md:w-1/2">
           <h1 className="text-2xl font-bold text-gray-800 mb-6">
-            3. Tip Calculator
+            Tip Calculator
           </h1>
 
           {/* <!-- Bill Amount --> */}
