@@ -28,7 +28,7 @@ export default function OrderSummary() {
           <span>Total</span>
           <span>${total.toFixed(2)}</span>
         </div>
-        <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm">Proceed to Checkout</button>
+        <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white text-sm">Proceed to Checkout</button>
       </div>
     </>
   );

@@ -25,12 +25,14 @@ export default function SearchInput({ defaultValue }: { defaultValue: string }) 
   }, 500); // 500ms debounce delay
 
   return (
-    <input
-      type="text"
-      placeholder="Search items..."
-      defaultValue={defaultValue}
-      onChange={(e) => handleSearch(e.target.value)}
-      className="w-full p-2 border rounded-md focus:outline-blue-500"
-    />
+    <div className="flex items-center border-b border-slate-100 p-4">
+      <input
+        type="text"
+        placeholder="Search items..."
+        defaultValue={defaultValue}
+        onChange={(e) => handleSearch(e.target.value)}
+        className="w-full p-2 border rounded-md focus:outline-blue-500"
+      />
+    </div>
   );
 }
